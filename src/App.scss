@@ -1,0 +1,44 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+.mobile-only-page {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 1vh;
+    height: 98vh;
+}
+
+.page {
+    -webkit-box-shadow: 10px 10px 48px -20px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 10px 10px 48px -20px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 48px -20px rgba(0, 0, 0, 0.47);
+    border-radius: 10px;
+    .page-container{
+        height: 100%;
+        padding: 1em;
+    }
+}
+
+.page-title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+// padding 
+.p-s{
+    padding-top: 1em;
+}
+.p-m{
+    padding-top: 2em;
+}
+
+.padding-none{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.margin-none{
+    margin-bottom: 0 !important;
+}

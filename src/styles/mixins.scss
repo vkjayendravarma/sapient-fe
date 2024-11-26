@@ -1,0 +1,15 @@
+@mixin font-style-primary($size: 1) {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px * $size;
+}
+
+
+@mixin font-style-secondary($size: 1, $weight:1) {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100 * $weight;
+    font-style: normal;
+    font-size: 16px * $size;
+}
+
