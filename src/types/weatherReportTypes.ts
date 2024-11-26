@@ -5,7 +5,7 @@ export interface DayWise {
     storm: boolean;
     max: number;
     min: number;
-    date: Date;
+    date: number;
 }
 
 

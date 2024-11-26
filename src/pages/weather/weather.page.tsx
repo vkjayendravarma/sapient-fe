@@ -116,7 +116,7 @@ function WeatherReportPage() {
 
                             <div className="weather-info  mt-3" key={index}>
                                 {index > 0 && <div className="followingDays card pt-3">
-                                    <p className="alert padding-none margin-none">{new Date(prediction.date).toDateString()} : <b>  {prediction.max} / {prediction.min}</b></p>
+                                    <p className="alert padding-none margin-none">{new Date(prediction.date * 1000).toDateString()} : <b>  {prediction.max} / {prediction.min}</b></p>
                                     <div className="alerts padding-none">
                                         {prediction.rainy && <p className="alert margin-none">Carry umbrella</p>}
                                         {prediction.sunny && <p className="alert margin-none">Use sunscreen lotion</p>}
