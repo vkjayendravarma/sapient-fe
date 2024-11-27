@@ -15,11 +15,10 @@ function LoginPageComponent() {
         // Replace this with your authentication logic
         setError("");
         setSuccess("");
-        axios.post("http://localhost:8080/accounts/login", {
+        axios.post(`${process.env.REACT_APP_API_URL}/accounts/login`, {
             username: email,
             password: password
         }).then(res => {
-            console.log(res.data);
             window.localStorage.setItem("token", "Bearer " + res.data.data)
             setSuccess("login success")
             navigate("/weather")

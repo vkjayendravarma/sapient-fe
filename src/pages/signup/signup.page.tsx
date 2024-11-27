@@ -22,7 +22,7 @@ function SignupPageComponent() {
         // Replace this with your authentication logic
         setError("");
         setSuccess("");
-        axios.post("http://localhost:8080/accounts/register", {
+        axios.post(`${process.env.REACT_APP_API_URL}/accounts/register`, {
             name: name,
             username: email,
             password: password

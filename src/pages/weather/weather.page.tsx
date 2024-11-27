@@ -48,6 +48,7 @@ function WeatherReportPage() {
         }
         try {
             const token = window.localStorage.getItem("token")
+
             const response = await axios.get(`${process.env.REACT_APP_API_URL}/weather/forecast`, {
                 params: { city: cityToFetch },
                 headers: { Authorization: token }
@@ -58,6 +59,7 @@ function WeatherReportPage() {
 
         } catch (err: any) {
             if (err.response.status == 401) {
+                window.localStorage.removeItem("token")
                 navigate("/login")
             }
             setError("City not found. Please try again.");
